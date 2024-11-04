@@ -2,6 +2,13 @@
 
 UnityTimelineの再生・停止とObsの再生・停止を同期する。
 
+## 環境
+ - Unity2022.3.21f1
+ - ObsStudio 30.0
+ - [obs-websocket-dotnet 4.9](https://github.com/BarRaider/obs-websocket-dotnet/releases/download/v4.9/obs-websocket-dotnet.dll)
+ - [websokect-sharp](https://github.com/sta/websocket-sharp)
+ - [Newtonsoft Json Unity Package](https://docs.unity3d.com/Packages/com.unity.nuget.newtonsoft-json@3.2/manual/index.html)
+
 ## Unity
  - `Assets\_Dev\Scripts\ObsConnect`をGameObjectにアタッチする
  ![Unity OBSConnet Setting 001](ReadmeFiles/obs_connet_unity_001.jpg)

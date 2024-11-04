@@ -20,13 +20,20 @@ public class ObsConnect : MonoBehaviour
     [SerializeField]
     PlayableDirector timeline;
 
-    private void Start()
+    private void Awake()
     {
         if (timeline)
         {
             timeline.playOnAwake = false;
             timeline.extrapolationMode = DirectorWrapMode.None;
+            timeline.Stop();
+        }
+    }
 
+    private void Start()
+    {
+        if (timeline)
+        {
             timeline.played += StartOBSRecording;
             timeline.stopped += StopOBSRecording;
             timeline.paused += PauseOBSRecording;
